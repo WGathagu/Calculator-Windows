@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Background="#FF64451F">
         <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnSeven_Click"/>
         <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Margin="148,217,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnEight_Click"/>
         <Button x:Name="btnNine" Content="9" HorizontalAlignment="Left" Margin="281,217,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnNine_Click"/>
@@ -20,7 +20,9 @@
         <Button x:Name="btnOne" Content="1" HorizontalAlignment="Left" Margin="281,374,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnOne_Click"/>
         <Button x:Name="btnZero" Content="0" HorizontalAlignment="Left" Margin="10,456,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnZero_Click"/>
         <Button x:Name="btnC" Content="C" HorizontalAlignment="Left" Margin="281,132,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnC_Click"/>
-        <TextBlock x:Name="txtAnswer" Margin="10,59,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="46" Width="380" FontSize="36" HorizontalAlignment="Left"/>
+        <StackPanel Margin="10,59,10,535" Orientation="Vertical">
+            <TextBlock x:Name="txtAnswer" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="59" Width="380" FontSize="48" HorizontalAlignment="Left" SelectionChanged="txtAnswer_SelectionChanged" Foreground="#FFF9F8F8" FontWeight="Bold"/>
+        </StackPanel>
         <Button x:Name="btnEquals" Content="=" HorizontalAlignment="Left" Margin="281,538,0,0" VerticalAlignment="Top" Height="70" Width="20" RenderTransformOrigin="1.482,0.567" Click="btnEquals_Click"/>
         <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="281,456,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnPlus_Click"/>
         <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="148,456,0,0" VerticalAlignment="Top" Height="70" Width="20" Click="btnMinus_Click"/>
